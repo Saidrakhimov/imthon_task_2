@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for borrowing in borrowings %}
+<h1>BOOK :  {{ borrowing.book_id }}</h1>
+<h1>MEMBER  :  {{ borrowing.member_id }}</h1>
+<h1>BORROW DATE  :  {{ borrowing.borrow_date }}</h1>
+<h1>RETURN DATE  :  {{ borrowing.return_date  }}</h1>
+{% endfor %}
+</body>
+</html>
